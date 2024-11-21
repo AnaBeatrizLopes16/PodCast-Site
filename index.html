@@ -1,42 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Podcasts</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>PodCast- Estação Teen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: #ef5d8efb;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-primary {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #17202c;
+            --bs-btn-border-color: #ab6bbf;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #cb94e7;
+            --bs-btn-hover-border-color: hsl(292, 39%, 69%);
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #12081c;
+            --bs-btn-active-border-color: #0a53be;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #0d6efd;
+            --bs-btn-disabled-border-color: #0d6efd;
+        }
+    </style>
+
 </head>
+
 <body>
-    <div class="container text-center my-5">
-        <h1 class="mb-4 title">Podcasts Populares</h1>
-        <div class="card" style="width: 20rem;">
-            <img src="img/nerdcast.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NERDCAST</h5>
-              <p class="card-text">
-                É o podcast pioneiro e mais popular do Brasil, criado por Alexandre Ottoni (Jovem Nerd) e Deive Pazos (Azaghal). Com episódios semanais, ele aborda uma infinidade de temas, desde cultura nerd e tecnologia até ciência, história, literatura e cinema, sempre com bom humor e convidados especiais. É um verdadeiro ponto de encontro para quem busca entretenimento inteligente, debates envolventes e, claro, muitas risadas.
-              </p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Estação Teen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre">PodCasts </a>
+                    </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-            <div class="card" style="width: 20rem;">
-                <img src="img/Um Milkshake Chamado Wanda.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">UM MILKSHAKE CHAMADO WANDA</h5>
-                  <p class="card-text">Um podcast leve e divertido que mistura cultura pop, humor e boas histórias em um só lugar. Apresentado por Phelipe Cruz, Marina Santa Helena e Samir Duarte, o programa é como aquele encontro com amigos no fim do dia, cheio de risadas e conversas sobre séries, filmes, música, atualidades e, claro, a vida. Com pitadas de irreverência e uma dose generosa de autenticidade, é o milkshake perfeito para refrescar sua rotina!</p>
-                  <a href="#" class="btn btn-primary">Saiba Mais</a>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="img/imagina-juntas.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">IMAGINA JUNTAS</h5>
-                      <p class="card-text">Um espaço para conversas descontraídas, reflexões relevantes e histórias que inspiram. Aqui, discutimos temas variados, desde cultura e sociedade até curiosidades do dia a dia, sempre com um toque de criatividade e uma visão justa. Perfeito para quem busca entretenimento com propósito e boas ideias!</p>
-                      <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </div>
-                  </div>
-              </div>
-          </div>
         </div>
+    </nav>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Capa PodCast - Estação Teen.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+    <br><br>
+    <section id="sobre">
+        <div class="container">
+            <h1 class="text-center">Os mais famosos entre os Jovens</h1>
+            <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                          <img src="img/nerdcast.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">NERDCAST</h5>
+                                <p class="card-text">Podcast pioneiro no Brasil, com temas nerds, ciência, história e cultura pop, apresentado por Jovem Nerd e Azaghal.</p>
+                                <a href="nerdcast.html" class="btn btn-primary">Ver Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                          <img src="img/imagina-juntas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">IMAGINA JUNTAS</h5>
+                                <p class="card-text">Um podcast descontraído sobre a vida adulta, cultura pop e amizades, apresentado por Carol Rocha, Jeska Grecco e Gus Lanzetta, cheio de humor e conversas sinceras.</p>
+                                <a href="imaginajuntas.html" class="btn btn-primary">Ver Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                          <img src="img/Um Milkshake Chamado Wanda.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">UM MILKSHAKE CHAMADO WANDA</h5>
+                                <p class="card-text"> Podcast divertido sobre cultura pop, humor e bate-papos descontraídos com Phelipe Cruz, Marina Santa Helena e Samir Duarte.</p>
+                                <a href="ummilkshakechamadowanda.html" class="btn btn-primary">Ver Mais</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
